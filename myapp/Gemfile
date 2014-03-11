@@ -1,0 +1,18 @@
+source 'https://rubygems.org'
+
+gem 'locomotive_cms', '~> 2.4.1', :require => 'locomotive/engine'
+
+group :assets do
+  gem 'compass-rails',  '~> 1.0.2'
+  gem 'sass-rails',     '~> 3.2.4'
+  gem 'coffee-rails',   '~> 3.2.2'
+  gem 'uglifier',       '~> 1.2.4'
+
+  # If you run your engine on **Linux,** you also have to add the following gem
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platforms => :ruby
+end
+
+group :development do
+  gem 'unicorn'
+end
